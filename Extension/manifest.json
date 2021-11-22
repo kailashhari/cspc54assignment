@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Phishing website detection",
+    "version": "1.0",
+    "description": "Detects phishing websites and reports to thr users",
+
+    "browser_action": {
+        "default_icon": "icon/icon16.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["junk/jquery.min.js", "content.js"],
+        "run_at": "document_end"
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "notifications",
+        "contextMenus",
+        "tabs",
+        "storage",
+        "management",
+        "<all_urls>"
+    ]
+}

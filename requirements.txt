@@ -1,0 +1,9 @@
+requests
+matplotlib
+sklearn
+pandas
+numpy
+flask
+shap
+flask-cors
+pymongo

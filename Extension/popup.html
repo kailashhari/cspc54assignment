@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-dark text-white" style="min-width: 300px; min-height: 60px;">
+    <div id="popup" class="text-center m-5">
+        <h4 class="m-2">The URL in current tab is</h4>
+        <button class="btn btn-primary m-2" id="button">Check</button>
+        <span id="success" class="badge bg-success p-3">Legitimate</span>
+        <span id="danger" class="badge bg-danger p-3">Phishing</span>
+        <span id="warning" class="badge bg-warning p-3">Checking</span>
+
+    </div>
+    <script src="./junk/jquery.min.js"></script>
+    <script src="popup.js" type="text/javascript"></script>
+</body>
+
+</html>
